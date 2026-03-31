@@ -30,7 +30,7 @@
     
     <form action="{% url 'event:chat_talk' object.id %}" method="post" novalidate>
         {% csrf_token %}
-        {% bootstrap_form_errors form %}
+        <!-- {% bootstrap_form_errors form %} -->
         {% bootstrap_form form layout='inline' %}
         <button type="submit" class="btn btn-primary">送信</button>
     </form>
